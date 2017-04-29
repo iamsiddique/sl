@@ -1,0 +1,23 @@
+Version 1.0
+i)   Theme Submitted for approval
+Version 1.0.1
+i)   Remove logo from screenshot.png-fixed
+ii)  Remove right-sidebar tag in style.css and readme.txt
+iii) Set image validation message in theme options.
+iv)  Fixed error : Failed to load resource: the server responded with a status of 404 (Not Found).
+V)   Add .pot file in languages folder.
+Version 1.0.2
+i)   Remove Contact Widget and Social Widget.
+ii)  Remove No Photo Available image.
+iii) Fixed css issue.
+Version 1.0.3
+i) 	Remove Commenting out lines of codes.
+ii) Fixed Footer Navigation and enqueue-files.php.
+iii) Fixed css issue.
+Version 1.0.4
+i) Add PRO Theme Features tab in theme options.
+Version 1.1 (5th Jan 2017)
+i) Misc Changes.
+Version 1.2 (27 March 2017)
+i)	Changed Author Details.
+
