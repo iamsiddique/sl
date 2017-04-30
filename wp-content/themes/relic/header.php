@@ -137,7 +137,7 @@ $relic_options = get_option('relic_theme_options');
       </div>	
     </header>
 
-<?php wowslider(3); ?>
+<?php wowslider(1); ?>
     <?php
     $relic_header_image = get_header_image();
     if (!empty($relic_header_image)) {
