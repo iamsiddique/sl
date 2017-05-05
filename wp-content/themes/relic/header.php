@@ -137,7 +137,15 @@ $relic_options = get_option('relic_theme_options');
       </div>	
     </header>
 
-<?php wowslider(1); ?>
+<?php
+if(is_front_page()){
+ wowslider(1); 
+}
+else{?>
+<div class="custom-header"></div>
+<?php
+}
+?>
     <?php
     $relic_header_image = get_header_image();
     if (!empty($relic_header_image)) {
