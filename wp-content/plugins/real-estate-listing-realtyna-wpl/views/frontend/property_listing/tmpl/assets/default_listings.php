@@ -36,6 +36,8 @@ foreach($this->wpl_properties as $key=>$property)
     $description = stripslashes(strip_tags($property['raw'][$description_column]));
     $cut_position = strrpos(substr($description, 0, 400), '.', -1);
     if(!$cut_position) $cut_position = 399;
+	$prp_listings       = isset($this->wpl_properties['current']['materials']['listing']['value']) ? $this->wpl_properties['current']['materials']['listing']['value'] : '';
+	$prp_type           = isset($this->wpl_properties['current']['materials']['property_type']['value']) ? $this->wpl_properties['current']['materials']['property_type']['value'] : '';
     ?>
 	<div class="wpl-column">
 		<div class="wpl_prp_cont wpl_prp_cont_old <?php echo ((isset($this->property_css_class) and in_array($this->property_css_class, array('row_box', 'grid_box'))) ? $this->property_css_class : ''); ?>" id="wpl_prp_cont<?php echo $property['data']['id']; ?>" itemscope itemtype="https://schema.org/TradeAction">
@@ -54,6 +56,7 @@ foreach($this->wpl_properties as $key=>$property)
                 
                 $location_visibility = wpl_property::location_visibility($property['data']['id'], $property['data']['kind'], $current_user_membership_id);
 				echo '<h4 class="wpl_prp_listing_location" itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">'.($location_visibility === true ? $property['location_text'] : $location_visibility).'</span></span></h4>';
+				echo '<h4 class="wpl_prp_listing_location" itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">'.$prp_type.$prp_listings.'</span></span></h4>';
 				?>
 				<div class="wpl_prp_listing_icon_box"><?php echo $room . $bathroom . $parking . $pic_count . $build_up_area; ?></div>
 				<div class="wpl_prp_desc" itemprop="description"><?php echo substr($description, 0, $cut_position + 1); ?></div>
