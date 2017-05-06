@@ -55,8 +55,8 @@ foreach($this->wpl_properties as $key=>$property)
 				  <h3 class="wpl_prp_title" itemprop="name">'.$property['property_title'].'</h3></a>';
                 
                 $location_visibility = wpl_property::location_visibility($property['data']['id'], $property['data']['kind'], $current_user_membership_id);
-				echo '<h4 class="wpl_prp_listing_location" itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">'.($location_visibility === true ? $property['location_text'] : $location_visibility).'</span></span></h4>';
-				echo '<h4 class="wpl_prp_listing_location" itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">'.$prp_type.$prp_listings.'</span></span></h4>';
+				echo '<h4 class="wpl_prp_listing_location custom-height" itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">'.($location_visibility === true ? $property['location_text'] : $location_visibility).'</span></span></h4>';
+				echo '<h4 class="wpl_prp_listing_location custom-height" itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">'.$prp_type.'&nbsp;'.$prp_listings.'</span></span></h4>';
 				?>
 				<div class="wpl_prp_listing_icon_box"><?php echo $room . $bathroom . $parking . $pic_count . $build_up_area; ?></div>
 				<div class="wpl_prp_desc" itemprop="description"><?php echo substr($description, 0, $cut_position + 1); ?></div>

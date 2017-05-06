@@ -139,7 +139,7 @@ $relic_options = get_option('relic_theme_options');
 
 <?php
 if(is_front_page()){
- wowslider(1); 
+ wowslider(7); 
 }
 else{?>
 <div class="custom-header"></div>
