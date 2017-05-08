@@ -35,7 +35,35 @@ $this->_wpl_import($this->tpl_path.'.scripts.js', true, true);
             <div class="tabs_container">
             	<?php if($pshow_gallery_activities): ?>
                 <div id="tabs-1" class="tabs_contents">
+                <div class="col-lg-8">
                     <?php /** load position gallery **/ wpl_activity::load_position('pshow_gallery', array('wpl_properties'=>$this->wpl_properties)); ?>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="wpl_prp_right_boxes details" itemscope>
+                    <div class="wpl_prp_right_boxes_title" itemprop="name">
+                        <?php echo '<span>'.$prp_type .'</span> '.$prp_listings; ?>
+                    </div>
+                    <div class="wpl_prp_right_boxes_content">
+                        <div class="wpl_prp_right_boxe_details_top clearfix">
+                            <div class="wpl_prp_right_boxe_details_left">
+                                <ul>
+                                    <?php if(trim($listing_id) != ''): ?><li><?php echo __($this->wpl_properties['current']['materials']['mls_id']['name'], 'wpl').' : <span itemprop="productID" class="value">'.$listing_id.'</span>'; ?></li><?php endif; ?>
+                                    <?php if(trim($bedroom) != ''): ?><li itemprop="numberOfRooms" itemscope itemtype="http://schema.org/QuantitativeValue"><span itemprop="unitText"><?php echo __($this->wpl_properties['current']['materials']['bedrooms']['name'], 'wpl').' : </span> <span itemprop="value" class="value">'.$bedroom.'</span>'; ?></li><?php endif; ?>
+                                    <?php if(trim($bathroom) != ''): ?><li itemprop="numberOfRooms" itemscope itemtype="http://schema.org/QuantitativeValue"><span itemprop="unitText"><?php echo __($this->wpl_properties['current']['materials']['bathrooms']['name'], 'wpl').' : </span> <span itemprop="value" class="value">'.$bathroom.'</span>'; ?></li><?php endif; ?>
+                                    <?php if(trim($build_up_area) != ''): ?><li><?php echo __($build_up_area_name, 'wpl').' : <span class="value">'.$build_up_area.'</span>'; ?></li><?php endif; ?>
+                                    <?php if($price_type): ?><li><?php echo __($this->wpl_properties['current']['materials']['price_period']['name'], 'wpl').' : <span class="value">'.$price_type.'</span>'; ?></li><?php endif; ?>
+                                </ul>
+                            </div>
+                            <div class="wpl_prp_right_boxe_details_right">
+                                <?php /** load wpl_pshow_link activity **/ wpl_activity::load_position('wpl_pshow_link', array('wpl_properties'=>$this->wpl_properties)); ?>
+                            </div>
+                        </div>
+                        <div class="wpl_prp_right_boxe_details_bot">
+                            <?php echo '<div class="price_box" itemprop="price">'.$price.'</div>'; ?>
+                        </div>
+                    </div>
+                </div>
+                    </div>
                 </div>
                 <?php endif; ?>
                 <?php if($pshow_googlemap_activities and $this->location_visibility === true): ?>
@@ -206,7 +234,7 @@ $this->_wpl_import($this->tpl_path.'.scripts.js', true, true);
             </div>
 			<div class="wpl-large-4 wpl-medium-5 wpl-small-12 wpl_prp_container_content_right wpl-column">
 			
-                <div class="wpl_prp_right_boxes details" itemscope>
+               <!--  <div class="wpl_prp_right_boxes details" itemscope>
                     <div class="wpl_prp_right_boxes_title" itemprop="name">
                         <?php echo '<span>'.$prp_type .'</span> '.$prp_listings; ?>
                     </div>
@@ -229,7 +257,7 @@ $this->_wpl_import($this->tpl_path.'.scripts.js', true, true);
                             <?php echo '<div class="price_box" itemprop="price">'.$price.'</div>'; ?>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="wpl_prp_show_position2">
                     <?php
                         $activities = wpl_activity::get_activities('pshow_position2');
