@@ -5,15 +5,29 @@ defined('_WPLEXEC') or die('Restricted access');
 <?php if(wpl_global::check_addon('aps')): ?>
 <i id="map_view_handler" class="map_view_handler cl" style="display: none;" onclick="map_view_toggle_listing()">&nbsp;</i>
 <?php endif; ?>
-
-<div class="wpl_sort_options_container">
-
-    <div class="wpl_sort_options_container_title"><?php echo __('Sort Option', 'wpl'); ?></div>
-    
-    <span class="wpl-sort-options-list"><?php echo $this->model->generate_sorts(array('type'=>1, 'kind'=>$this->kind)); ?></span>
+<div class="wpl_sort_options_container ">
+    <div class="hd_cover custom-breadcrum"> 
+    <div class="">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="padding-custom" >
+                <?php echo '<span >' . $this->total_pages . ' '. __('Property Found', 'wpl') . '</span>'?>
+                <!-- BreadCrumb -->
+                <?php the_title();?></div>
+                 <span class="wpl-sort-options-list"><?php echo $this->model->generate_sorts(array('type'=>1, 'kind'=>$this->kind)); ?></span>
     <span class="wpl-sort-options-selectbox"><?php echo $this->model->generate_sorts(array('type'=>0, 'kind'=>$this->kind)); ?></span>
+            </div>
+        </div>
+    </div>  
+</div>
+    <div class="wpl_sort_options_container_title">
 
-    <?php if($this->property_css_class_switcher): ?>
+    <!--<?php echo __('Sort Option', 'wpl'); ?>--></div>
+    
+    <!-- <span class="wpl-sort-options-list"><?php echo $this->model->generate_sorts(array('type'=>1, 'kind'=>$this->kind)); ?></span>
+    <span class="wpl-sort-options-selectbox"><?php echo $this->model->generate_sorts(array('type'=>0, 'kind'=>$this->kind)); ?></span> -->
+
+    <!-- <?php if($this->property_css_class_switcher): ?>
     <div class="wpl_list_grid_switcher <?php if($this->switcher_type == "icon+text") echo 'wpl-list-grid-switcher-icon-text'; ?>">
            <div id="grid_view" class="grid_view <?php if($this->property_css_class == 'grid_box') echo 'active'; ?>">
             <?php if($this->switcher_type == "icon+text") echo '<span>'.__('Grid', 'wpl').'</span>'; ?>
@@ -27,7 +41,7 @@ defined('_WPLEXEC') or die('Restricted access');
             </div>
         <?php endif; ?>
     </div>
-    <?php endif; ?>
+    <?php endif; ?> -->
 
     <?php if(wpl_global::check_addon('pro') and $this->listings_rss_enabled): ?>
     <div class="wpl-rss-wp">

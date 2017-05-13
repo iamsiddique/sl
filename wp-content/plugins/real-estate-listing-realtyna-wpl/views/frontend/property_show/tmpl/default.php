@@ -68,7 +68,35 @@ $this->_wpl_import($this->tpl_path.'.scripts.js', true, true);
                 <?php endif; ?>
                 <?php if($pshow_googlemap_activities and $this->location_visibility === true): ?>
                 <div id="tabs-2" class="tabs_contents">
+                <div class="col-lg-8">
                     <?php /** load position googlemap **/ wpl_activity::load_position('pshow_googlemap', array('wpl_properties'=>$this->wpl_properties)); ?>
+                    </div>
+                     <div class="col-lg-4">
+                        <div class="wpl_prp_right_boxes details" itemscope>
+                    <div class="wpl_prp_right_boxes_title" itemprop="name">
+                        <?php echo '<span>'.$prp_type .'</span> '.$prp_listings; ?>
+                    </div>
+                    <div class="wpl_prp_right_boxes_content">
+                        <div class="wpl_prp_right_boxe_details_top clearfix">
+                            <div class="wpl_prp_right_boxe_details_left">
+                                <ul>
+                                    <?php if(trim($listing_id) != ''): ?><li><?php echo __($this->wpl_properties['current']['materials']['mls_id']['name'], 'wpl').' : <span itemprop="productID" class="value">'.$listing_id.'</span>'; ?></li><?php endif; ?>
+                                    <?php if(trim($bedroom) != ''): ?><li itemprop="numberOfRooms" itemscope itemtype="http://schema.org/QuantitativeValue"><span itemprop="unitText"><?php echo __($this->wpl_properties['current']['materials']['bedrooms']['name'], 'wpl').' : </span> <span itemprop="value" class="value">'.$bedroom.'</span>'; ?></li><?php endif; ?>
+                                    <?php if(trim($bathroom) != ''): ?><li itemprop="numberOfRooms" itemscope itemtype="http://schema.org/QuantitativeValue"><span itemprop="unitText"><?php echo __($this->wpl_properties['current']['materials']['bathrooms']['name'], 'wpl').' : </span> <span itemprop="value" class="value">'.$bathroom.'</span>'; ?></li><?php endif; ?>
+                                    <?php if(trim($build_up_area) != ''): ?><li><?php echo __($build_up_area_name, 'wpl').' : <span class="value">'.$build_up_area.'</span>'; ?></li><?php endif; ?>
+                                    <?php if($price_type): ?><li><?php echo __($this->wpl_properties['current']['materials']['price_period']['name'], 'wpl').' : <span class="value">'.$price_type.'</span>'; ?></li><?php endif; ?>
+                                </ul>
+                            </div>
+                            <div class="wpl_prp_right_boxe_details_right">
+                                <?php /** load wpl_pshow_link activity **/ wpl_activity::load_position('wpl_pshow_link', array('wpl_properties'=>$this->wpl_properties)); ?>
+                            </div>
+                        </div>
+                        <div class="wpl_prp_right_boxe_details_bot">
+                            <?php echo '<div class="price_box" itemprop="price">'.$price.'</div>'; ?>
+                        </div>
+                    </div>
+                </div>
+                    </div>
                 </div>
                 <?php endif; ?>
                 <?php if($pshow_video_activities): ?>
@@ -114,7 +142,7 @@ $this->_wpl_import($this->tpl_path.'.scripts.js', true, true);
                 <?php /** listing result **/ wpl_activity::load_position('pshow_listing_results', array('wpl_properties'=>$this->wpl_properties)); ?>
             </div>
             <div class="wpl-row wpl-expanded">
-				<div class="wpl-large-8 wpl-medium-7 wpl-small-12 wpl_prp_container_content_left wpl-column">
+				<div class="wpl-large-12 wpl-medium-12 wpl-small-12 wpl_prp_container_content_left wpl-column">
 				<?php
                     $description_column = 'field_308';
                     if(wpl_global::check_multilingual_status() and wpl_addon_pro::get_multiligual_status_by_column($description_column, $this->kind)) $description_column = wpl_addon_pro::get_column_lang_name($description_column, wpl_global::get_current_language(), false);
