@@ -474,13 +474,13 @@ class wpl_UploadHandler
         /** Compatibility with IIS based servers**/
         if(!$file_size) $file_size = $file->size;
 
-        if ($this->options['max_file_size'] && (
+        /*if ($this->options['max_file_size'] && (
                 $file_size > $this->options['max_file_size'] ||
                 $file->size > $this->options['max_file_size'])
             ) {
-            $file->error = $this->get_error_message('max_file_size');
+             $file->error = $this->get_error_message('max_file_size');
             return false;
-        }
+        }*/
         if ($this->options['min_file_size'] &&
             $file_size < $this->options['min_file_size']) {
             $file->error = $this->get_error_message('min_file_size');

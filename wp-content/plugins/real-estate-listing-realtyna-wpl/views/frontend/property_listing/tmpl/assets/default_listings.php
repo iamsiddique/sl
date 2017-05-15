@@ -18,18 +18,18 @@ foreach($this->wpl_properties as $key=>$property)
     /** set current property **/
     $this->wpl_properties['current'] = $property;
 
-    if(isset($property['materials']['bedrooms']['value']) and ($_bedrooms = intval($property['materials']['bedrooms']['value']))) $room = sprintf('<div class="bedroom">%d<span>%s</span></div>', $_bedrooms, __(wpl_global::pluralize($_bedrooms, "Bedroom"), "wpl"));
-    elseif(isset($property['materials']['rooms']['value']) and ($_rooms = intval($property['materials']['rooms']['value']))) $room = sprintf('<div class="room">%d<span>%s</span></div>', $_rooms, __(wpl_global::pluralize($_rooms, "Room"), "wpl"));
+    if(isset($property['materials']['bedrooms']['value']) and ($_bedrooms = intval($property['materials']['bedrooms']['value']))) $room = sprintf('<div class="bedroom">%d&nbsp;<span>%s</span></div>', $_bedrooms, __(wpl_global::pluralize($_bedrooms, "Bedroom"), "wpl"));
+    elseif(isset($property['materials']['rooms']['value']) and ($_rooms = intval($property['materials']['rooms']['value']))) $room = sprintf('<div class="room">%d&nbsp;<span>%s</span></div>', $_rooms, __(wpl_global::pluralize($_rooms, "Room"), "wpl"));
     else $room = '';
 
-    $bathroom = (isset($property['materials']['bathrooms']['value']) and ($_bathrooms = floatval($property['materials']['bathrooms']['value']))) ? sprintf('<div class="bathroom">%s<span>%s</span></div>', $_bathrooms, __(wpl_global::pluralize($_bathrooms, "Bathroom"), "wpl")) : '';
+    $bathroom = (isset($property['materials']['bathrooms']['value']) and ($_bathrooms = floatval($property['materials']['bathrooms']['value']))) ? sprintf('<div class="bathroom">%s&nbsp;<span>%s</span></div>', $_bathrooms, __(wpl_global::pluralize($_bathrooms, "Bathroom"), "wpl")) : '';
 
-    $parking = (isset($property['materials']['f_150']['values'][0]) and ($_parkings = intval($property['materials']['f_150']['values'][0]))) ? sprintf('<div class="parking">%d<span>%s</span></div>', $_parkings, __(wpl_global::pluralize($_parkings, "Parking"), "wpl")) : '';
+    $parking = (isset($property['materials']['f_150']['values'][0]) and ($_parkings = intval($property['materials']['f_150']['values'][0]))) ? sprintf('<div class="parking">%d&nbsp;<span>%s</span></div>', $_parkings, __(wpl_global::pluralize($_parkings, "Parking"), "wpl")) : '';
 
-    $pic_count = (isset($property['raw']['pic_numb']) and ($_pic_count = intval($property['raw']['pic_numb']))) ? sprintf('<div class="pic_count">%d<span>%s</span></div>', $_pic_count, __(wpl_global::pluralize($_pic_count, "Picture"), "wpl")) : '';
+    $pic_count = (isset($property['raw']['pic_numb']) and ($_pic_count = intval($property['raw']['pic_numb']))) ? sprintf('<div class="pic_count">%d&nbsp;<span>%s</span></div>', $_pic_count, __(wpl_global::pluralize($_pic_count, "Picture"), "wpl")) : '';
 	
 	$living_area = isset($property['materials']['living_area']['value']) ? explode(' ', $property['materials']['living_area']['value']) : (isset($property['materials']['lot_area']['value']) ? explode(' ', $property['materials']['lot_area']['value']): '' );
-	$build_up_area = '<div class="built_up_area">'.$living_area[0].'<span>'.$living_area[1].'</span></div>';
+	$build_up_area = '<div class="built_up_area">'.$living_area[0].'&nbsp;<span>'.$living_area[1].'</span></div>';
 	
 	$property_price = (isset($property['materials']['price']['value']) and intval(preg_replace("/[^0-9]/", "", $property['materials']['price']['value']))) ? $property['materials']['price']['value'] : '&nbsp;';
     

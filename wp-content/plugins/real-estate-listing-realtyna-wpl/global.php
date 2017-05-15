@@ -890,7 +890,7 @@ class wpl_global
      * @param string $extension
      * @return array
      */
-	public static function upload($file, $dest = '', $ext_array = array('jpg','png','gif','jpeg'), $max_file_size = 512000, $extension = NULL)
+	public static function upload($file, $dest = '', $ext_array = array('jpg','png','gif','jpeg'), $max_file_size = 51200000, $extension = NULL)
 	{
 		$error = '';
 		$msg = '';

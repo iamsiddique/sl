@@ -3,7 +3,7 @@
 <!-- Footer Widget Secton -->
 <div class="enigma_footer_widget_area">	
 	<div class="container">
-		<div class="row">
+		<!-- <div class="row">
 			<?php 
 			if ( is_active_sidebar( 'footer-widget-area' ) ){ 
 				dynamic_sidebar( 'footer-widget-area' );
@@ -16,7 +16,7 @@
 			'after_title'   => '<div class="enigma-footer-separator"></div></div>' );
 			the_widget('WP_Widget_Pages', null, $args);			
 			} ?>
-		</div>		
+		</div>		 -->
 	</div>	
 </div>
 <div class="enigma_footer_area">

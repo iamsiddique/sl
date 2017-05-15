@@ -171,7 +171,7 @@ $this->_wpl_import($this->tpl_path.'.scripts.js', true, true);
                     
                     echo '<div class="wpl_prp_show_detail_boxes">
                             <div class="wpl_prp_show_detail_boxes_title"><span>'.__($values['self']['name'], 'wpl').'</span></div>
-                            <div class="wpl-small-up-1 wpl-medium-up-1 wpl-large-up-'.$this->fields_columns.' wpl_prp_show_detail_boxes_cont">';
+                            <div class="wpl-small-up-1 wpl-medium-up-1 wpl-large-up-4  wpl_prp_show_detail_boxes_cont">';
 
                     foreach($values['data'] as $key => $value)
 					{
