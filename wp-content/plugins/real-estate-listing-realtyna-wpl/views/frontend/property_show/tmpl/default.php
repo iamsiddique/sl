@@ -47,7 +47,7 @@ $this->_wpl_import($this->tpl_path.'.scripts.js', true, true);
                         <div class="wpl_prp_right_boxe_details_top clearfix">
                             <div class="wpl_prp_right_boxe_details_left">
                                 <ul>
-                                    <?php if(trim($listing_id) != ''): ?><li><?php echo __($this->wpl_properties['current']['materials']['mls_id']['name'], 'wpl').' : <span itemprop="productID" class="value">'.$listing_id.'</span>'; ?></li><?php endif; ?>
+                                    <!-- <?php if(trim($listing_id) != ''): ?><li><?php echo __($this->wpl_properties['current']['materials']['mls_id']['name'], 'wpl').' : <span itemprop="productID" class="value">'.$listing_id.'</span>'; ?></li><?php endif; ?> -->
                                     <?php if(trim($bedroom) != ''): ?><li itemprop="numberOfRooms" itemscope itemtype="http://schema.org/QuantitativeValue"><span itemprop="unitText"><?php echo __($this->wpl_properties['current']['materials']['bedrooms']['name'], 'wpl').' : </span> <span itemprop="value" class="value">'.$bedroom.'</span>'; ?></li><?php endif; ?>
                                     <?php if(trim($bathroom) != ''): ?><li itemprop="numberOfRooms" itemscope itemtype="http://schema.org/QuantitativeValue"><span itemprop="unitText"><?php echo __($this->wpl_properties['current']['materials']['bathrooms']['name'], 'wpl').' : </span> <span itemprop="value" class="value">'.$bathroom.'</span>'; ?></li><?php endif; ?>
                                     <?php if(trim($build_up_area) != ''): ?><li><?php echo __($build_up_area_name, 'wpl').' : <span class="value">'.$build_up_area.'</span>'; ?></li><?php endif; ?>
@@ -110,6 +110,7 @@ $this->_wpl_import($this->tpl_path.'.scripts.js', true, true);
                 </div>
                 <?php endif; ?>
             </div>
+            <div style="clear:both"></div>
             <div class="tabs_box">
                 <ul class="tabs">
                 	<?php if($pshow_gallery_activities): ?>

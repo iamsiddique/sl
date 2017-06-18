@@ -14,6 +14,7 @@
 	<?php $wl_theme_options = weblizar_get_options(); ?>
 	<?php if($wl_theme_options['upload_image_favicon']!=''){ ?>
 	<link rel="shortcut icon" href="<?php  echo esc_url($wl_theme_options['upload_image_favicon']); ?>" /> 
+	<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
 	<?php } ?>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
 	<?php wp_head(); ?>
@@ -70,7 +71,7 @@
 					<?php } if($wl_theme_options['youtube_link']!='') { ?>
 					<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"><a href="<?php echo esc_url($wl_theme_options['youtube_link']) ; ?>"><i class="fa fa-youtube"></i></a></li>
 	                <?php } if($wl_theme_options['gplus']!='') { ?>
-					<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="gplus"><a href="<?php echo esc_url($wl_theme_options['gplus']) ; ?>"><i class="fa fa-google-plus"></i></a></li>
+					<li class="gplus" data-toggle="tooltip" data-placement="bottom" title="gplus"><a href="<?php echo esc_url($wl_theme_options['gplus']) ; ?>"><i class="fa fa-google-plus"></i></a></li>
 	                <?php } if($wl_theme_options['instagram']!='') { ?>
 					<li class="instagram" data-toggle="tooltip" data-placement="bottom" title="instagram"><a href="<?php echo esc_url($wl_theme_options['instagram']) ; ?>"><i class="fa fa-instagram"></i></a></li>
 	                <?php } if($wl_theme_options['vk_link']!='') { ?>

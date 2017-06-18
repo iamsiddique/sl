@@ -2,7 +2,7 @@
 
 
 <?php $wl_theme_options = weblizar_get_options(); ?>
-<div class="enigma_project_section">
+<div class="enigma_project_section" style="padding-top: 20px;padding-bottom: 0px;">
 <?php if($wl_theme_options['port_heading'] !='') { ?>
 	<div class="container">
 		<div class="row">
