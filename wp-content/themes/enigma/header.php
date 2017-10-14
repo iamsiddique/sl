@@ -14,6 +14,7 @@
 	<?php $wl_theme_options = weblizar_get_options(); ?>
 	<?php if($wl_theme_options['upload_image_favicon']!=''){ ?>
 	<link rel="shortcut icon" href="<?php  echo esc_url($wl_theme_options['upload_image_favicon']); ?>" /> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
 	<?php } ?>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
@@ -55,12 +56,12 @@
 			<?php } ?>
 				<?php if($wl_theme_options['header_social_media_in_enabled']=='1') { ?>
 				<div class="col-md-6 col-sm-12">
-				<?php if($wl_theme_options['email_id'] || $wl_theme_options['phone_no'] !='') { ?>
+				<!-- <?php if($wl_theme_options['email_id'] || $wl_theme_options['phone_no'] !='') { ?>
 				<ul class="head-contact-info">
 						<?php if($wl_theme_options['email_id'] !='') { ?><li><i class="fa fa-envelope"></i><a href="mailto:<?php echo $wl_theme_options['email_id']; ?>"><?php echo esc_attr($wl_theme_options['email_id']); ?></a></li><?php } ?>
 						<?php if($wl_theme_options['phone_no'] !='') { ?><li><i class="fa fa-phone"></i><a href="tel:<?php echo $wl_theme_options['phone_no']; ?>"><?php echo esc_attr($wl_theme_options['phone_no']); ?></a></li><?php } ?>
 				</ul>
-				<?php } ?>
+				<?php } ?> -->
 					<ul class="social">
 					<?php if($wl_theme_options['fb_link']!='') { ?>
 					   <li class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"><i class="fa fa-facebook"></i></a></li>

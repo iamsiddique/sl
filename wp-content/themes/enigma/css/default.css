@@ -58,7 +58,8 @@
 }
 /** slider css ***/
 .carousel-list li {
-	background:rgba(49, 162, 221, 0.8);
+	background:none;
+	/*background:rgba(49, 162, 221, 0.8);*/
 }
 
 /** service  section css ***/
@@ -467,7 +468,7 @@
 /***** Footer Area Css *****************************************************************
 ***************************************************************************************/
 .enigma_footer_area{
-	background: #31A3DD;
+	background: #000;
 	border-top: 0px solid #6B6B6B;
 }
 /***** Contact Info Css *****************************************************************

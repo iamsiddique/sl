@@ -15,10 +15,21 @@
 	}
 	
 	.carousel-caption {
-	top: 25%;
+	top: 0%;
 	}
 	.boxed .carousel-caption {
 	top: 20%;
+	}
+	.carousel-caption {
+	
+	background: rgba(0,0,0,0.6) !important;
+	}
+	.carousel-text {
+	position:relative;
+	top: 20%;
+	}
+	.carousel-text h1 {
+	background: none !important;
 	}
 	
 }
@@ -32,7 +43,17 @@
 	z-index: 99997;
 	left: 0;
 	}
+	.carousel-caption {
 	
+	background: rgba(0,0,0,0.6) !important;
+	}
+	.carousel-text h1 {
+	background: none !important;
+	}
+	.carousel-text {
+	position:relative;
+	top: 20%;
+	}
 } 
 
 /* This Media screen css called for All Hc Pages Element---------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -66,7 +87,17 @@
 	margin-bottom: 0;
 	float: left;
 	}
+	.carousel-caption {
 	
+	background: rgba(0,0,0,0.6) !important;
+	}
+	.carousel-text h1 {
+	background: none !important;
+	}
+	.carousel-text {
+	position:relative;
+	top: 20%;
+	}
 }	
 @media only screen and (min-width: 767px) and (max-width: 992px) {
 .logo{
@@ -116,9 +147,18 @@
 	.carousel-caption{
 	top:40px;
 	}
+	.carousel-caption {
+	
+	background: rgba(0,0,0,0.6) !important;
+	}
+	.carousel-text {
+	position:relative;
+	top: 20%;
+	}
 	.carousel-text h1 {
 	font-size: 1.4em;
 	padding:10px;
+	background: none !important;
 	}
 	.carousel-list li {
 	color: #fff;

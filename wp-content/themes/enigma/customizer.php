@@ -1413,7 +1413,7 @@ class enigma_Font_Control extends WP_Customize_Control
    <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
    <select <?php $this->link(); ?> >
     <option  value="Abril Fatface"<?php if($this->value()== 'Abril Fatface') echo 'selected="selected"';?>><?php _e('Abril Fatface','enigma'); ?></option>
-	<option  value="Advent Pro"<?php if($this->value()== 'Advent Pro')  echo 'selected="selected"';?>><?php _e('Advent Pro','enigma'); ?></option>
+	<option  value="Montserrat"<?php if($this->value()== 'Montserrat')  echo 'selected="selected"';?>><?php _e('Montserrat','enigma'); ?></option>
 	<option  value="Aldrich"<?php if($this->value()== 'Aldrich') echo 'selected="selected"';?>><?php _e('Aldrich','enigma'); ?></option>
 	<option  value="Alex Brush"<?php if($this->value()== 'Alex Brush') echo 'selected="selected"';?>><?php _e('Alex Brush','enigma'); ?></option>
 	<option  value="Allura"<?php if($this->value()== 'Allura') echo 'selected="selected"';?>><?php _e('Allura','enigma'); ?></option>

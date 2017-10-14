@@ -42,7 +42,7 @@ foreach($this->wpl_properties as $key=>$property)
 	<div class="wpl-column">
 		<div class="wpl_prp_cont wpl_prp_cont_old <?php echo ((isset($this->property_css_class) and in_array($this->property_css_class, array('row_box', 'grid_box'))) ? $this->property_css_class : ''); ?>" id="wpl_prp_cont<?php echo $property['data']['id']; ?>" itemscope itemtype="https://schema.org/TradeAction">
 			<div class="wpl_prp_top">
-				<div class="wpl_prp_top_boxes front">
+				<div class="wpl_prp_top_boxes front" style="height:250px;">
 					<?php wpl_activity::load_position('wpl_property_listing_image', array('wpl_properties'=>$this->wpl_properties)); ?>
 				</div>
 				<div class="wpl_prp_top_boxes back">
@@ -55,8 +55,8 @@ foreach($this->wpl_properties as $key=>$property)
 				  <h3 class="wpl_prp_title" itemprop="name">'.$property['property_title'].'</h3></a>';
                 
                 $location_visibility = wpl_property::location_visibility($property['data']['id'], $property['data']['kind'], $current_user_membership_id);
-				echo '<h4 class="wpl_prp_listing_location custom-height" itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">'.($location_visibility === true ? $property['location_text'] : $location_visibility).'</span></span></h4>';
-				echo '<h4 class="wpl_prp_listing_location custom-height" itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">'.$prp_type.'&nbsp;'.$prp_listings.'</span></span></h4>';
+				// echo '<h4 class="wpl_prp_listing_location custom-height" itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">'.($location_visibility === true ? $property['location_text'] : $location_visibility).'</span></span></h4>';
+				// echo '<h4 class="wpl_prp_listing_location custom-height" itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">'.$prp_type.'&nbsp;'.$prp_listings.'</span></span></h4>';
 				?>
 				<div class="wpl_prp_listing_icon_box"><?php echo $room . $bathroom . $parking . $pic_count . $build_up_area; ?></div>
 				<div class="wpl_prp_desc" itemprop="description"><?php echo substr($description, 0, $cut_position + 1); ?></div>

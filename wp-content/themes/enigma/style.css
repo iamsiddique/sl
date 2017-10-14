@@ -21,8 +21,8 @@ Text Domain: enigma
 /* Header Section css-------------------------------------------------------------- */ 
 body {
    /* padding:0 30px;
-   font-family: 'Advent Pro' !important;*/
-   font-family: 'Advent Pro' !important;
+   font-family: 'Montserrat', sans-serif;*/
+   font-family: 'Montserrat', sans-serif;
    background-color: #fff;
 
    }
@@ -41,12 +41,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	color: #666;
 	text-shadow: 0 0 1px rgba(0,0,0,0.01);
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	
 }
 p , .textwidget{
-font-family: 'Advent Pro' !important;
+font-family: 'Montserrat', sans-serif;
 font-size: 16px;
 line-height: 26px;
 
@@ -74,11 +74,11 @@ line-height: 26px;
 .logo{
 	text-align:left;
 	padding-bottom:0px;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 }
 .logo a{
 	font-weight: 600;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	margin-bottom:10px;
 	font-size: 40px;
 	color: #fff;
@@ -87,14 +87,14 @@ line-height: 26px;
 	color: #fff;
 }
 .logo p{
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	margin-top:5px;
 	color: #fff;
 }
 .social{
 	display: block;
 	text-align: right;
-	padding-top:5px;
+	padding-top:18px;
 	padding-bottom:5px;
 
 }
@@ -116,7 +116,7 @@ line-height: 26px;
 	cursor:pointer;
 }
 .social i  {
-	color:#fff;
+	color:#9d9d9d;
 	line-height:30px;
 }
 /* facebook */
@@ -124,11 +124,11 @@ line-height: 26px;
 	/*background-size: 100% 200%;
 	/*background-image: linear-gradient(to bottom, transparent 50%, #4C66A4 50%);*/
 	background-position: 0 -100%;
-	background-color:#4C66A4;
+	background-color:#000;
 }
 .social li.facebook:hover{
 	background-position: 0 -100%;
-	background-color:#4C66A4;
+	background-color:#000;
 }
 /* dribble */
 .social li.dribbble{
@@ -137,29 +137,29 @@ line-height: 26px;
 }
 .social li.dribbble:hover{
   background-position: 0 -100%;
-  background-color:#EA4C89;
+  background-color:#000;
  }
 /* dribble */
 .social li.twitter{
 	background-size: 100% 200%;
 	background-position: 0 -100%;
-	background-color:#31a3dd;
+	background-color:#000;
 	/*background-image: linear-gradient(to bottom, transparent 50%, #f60 50%);*/
 }
 .social li.twitter:hover{
 	background-position: 0 -100%;
-	background-color:#31a3dd;
+	background-color:#000;
 }
 /* linkedin */
 .social li.linkedin{
 	background-size: 100% 200%;
 	background-position: 0 -100%;
-	background-color:#069;
+	background-color:#000;
 	/*background-image: linear-gradient(to bottom, transparent 50%, #069 50%);*/
 }
 .social li.linkedin:hover{
 	background-position: 0 -100%;
-	background-color:#069;
+	background-color:#000;
 }
 /* youtube */
 .social li.youtube{
@@ -168,17 +168,17 @@ line-height: 26px;
 }
 .social li.youtube:hover{
 	background-position: 0 -100%;
-	background-color:#C92228;
+	background-color:#000;
 }
 .social li.gplus{
 	background-size: 100% 200%;
 	background-position: 0 -100%;
-	background-color:#dc4a38;
+	background-color:#000;
 	/*background-image: linear-gradient(to bottom, transparent 50%, #C92228 50%);*/
 }
 .social li.gplus:hover{
 	background-position: 0 -100%;
-	background-color:#dc4a38;
+	background-color:#000;
 }
 
 .enigma_heading_title {
@@ -200,7 +200,7 @@ line-height: 26px;
 	font-weight: 500;
 	text-transform: uppercase;
 	font-weight: 600;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .enigma_heading_title2 {
@@ -213,7 +213,7 @@ line-height: 26px;
 	letter-spacing: 1px;
 	padding-bottom: 10px;
 	font-weight: 600;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .enigma_heading_title2 h3 {
@@ -249,7 +249,7 @@ line-height: 26px;
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 3em;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	color: #fff;
 	text-transform: uppercase;
@@ -282,7 +282,7 @@ line-height: 26px;
 	margin-bottom: 10px;
 	overflow: hidden;
 	font-weight: 600;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	padding:10px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -377,7 +377,7 @@ line-height: 26px;
 	word-wrap:break-word;
 	margin:0 0 10px;
 	font-weight: 600;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 }
 .enigma_service_detail p{
 	font-size: 16px;
@@ -417,7 +417,7 @@ line-height: 26px;
 	letter-spacing: normal;
 	line-height: 27px;
 	font-weight: 600;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 }
 .enigma_service_detail_2 p{
 	font-size: 18px;
@@ -571,7 +571,7 @@ line-height: 26px;
     border-radius: 0;
     padding: 0 0 15px;
     text-align: center;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	cursor: pointer;
 }
 
@@ -582,7 +582,7 @@ line-height: 26px;
 	margin: 0;
     padding: 9px 3px 0px;
     line-height: 35px;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 }
 .enigma_home_portfolio_caption small {
     font-size: 13px;
@@ -699,7 +699,7 @@ line-height: 26px;
 .enigma-project-description p{
 	text-align:left;
 	font-size:16px;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	font-weight:500;
 }
 .enigma-related-project{
@@ -745,7 +745,7 @@ transition: all 0.3s ease 0s;
 	padding-left:10px;
 }
 .enigma-project-detail-sidebar p {
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
@@ -754,7 +754,7 @@ transition: all 0.3s ease 0s;
     padding-top: 0px;
 }
 .enigma-project-detail-sidebar p small {
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	padding-left: 0px;
 	display:block;
@@ -764,7 +764,7 @@ transition: all 0.3s ease 0s;
 .enigma-project-detail-sidebar .launch-enigma-project a {
 	display: inline-block;
 	font-weight: 600;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	line-height: 20px;
 	margin: 15px 0 15px;
@@ -1202,7 +1202,7 @@ margin-bottom:20px;
 	border-radius: 0px;
 	display: block;
 	font-weight: 600;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	width: 100px;
 	padding-top: 10px;
 	padding-left:10px;
@@ -1251,7 +1251,7 @@ margin-bottom:20px;
 	
 }
 .enigma_blog_post_content p {
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	line-height: 27px;
 	margin: 0 0 20px;
@@ -1308,7 +1308,7 @@ margin-bottom:20px;
 }
 
 .enigma_recent_widget_post h3 , .enigma_footer_widget_column ul li {
-   	font-family: 'Advent Pro' !important;
+   	font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 2px;
@@ -1335,7 +1335,7 @@ margin-bottom:20px;
 }
 
 .enigma_recent_widget_post_date {
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     line-height: 20px;
 	color: #ffffff;
@@ -1366,7 +1366,7 @@ color: #6a6a6a;
 }
 .enigma_sidebar_widget .enigma_recent_widget_post h3 {
     font-weight: 600;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 2px;
@@ -1376,7 +1376,7 @@ color: #6a6a6a;
 .enigma_sidebar_widget h3 {
 	display: inline-block;
 	font-weight: 600;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	line-height: 22px;
 	margin-bottom: 5px;
@@ -1424,7 +1424,7 @@ color: #6a6a6a;
     border: 0 none;
     cursor: pointer;
 	display: inline-block;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 20px;
@@ -1491,7 +1491,7 @@ color: #6a6a6a;
 	cursor: pointer;
 	display: inline-block;
 	font-weight: 600;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px !important;	
 	line-height: 20px;
 	margin: 0 5px 10px 0;
@@ -1565,7 +1565,7 @@ float:left;
 	color:#fff;
 }
 .enigma_author_detail_wrapper p{
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	line-height: 25px;
 	margin: 0 0 0px;
@@ -1582,7 +1582,7 @@ float:left;
     margin: 0 0 5px;
 }
 .enigma_comment_title h3 {
-    font-family: 'Advent Pro' !important;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     line-height: 25px;
     margin: 0 0 -2px;
@@ -1612,7 +1612,7 @@ float:left;
 	padding: 20px;
 }
 .enigma_comment_detail_title {
-    font-family: 'Advent Pro' !important;
+    font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
     font-size: 18px;
 	line-height: 20px;
@@ -1620,7 +1620,7 @@ float:left;
 }
 
 .enigma_comment_detail p{
-   font-family: 'Advent Pro' !important;
+   font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 	line-height: 25px;
 	margin: 0 0 20px;
@@ -1632,7 +1632,7 @@ float:left;
    font-size: 14px;
    display:block;
    font-weight: 600;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 }
 .reply {
     font-family: 'Roboto', sans-serif;
@@ -1659,7 +1659,7 @@ margin-bottom: 20px;
 	float: none;
 }
 .enigma_comment_form_section h2 {
-    font-family: 'Advent Pro' !important;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     letter-spacing: 1px;
     line-height: 25px;
@@ -1672,7 +1672,7 @@ margin-bottom: 20px;
 	top: 5px;
 }
 .enigma_comment_form_section label {
-    font-family: 'Advent Pro' !important;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 	line-height: 20px;
 	margin: 0 0 11px;
@@ -1710,7 +1710,7 @@ margin-bottom: 20px;
 }
 .enigma_send_button , #enigma_send_button{
 	font-weight: 600;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	display: inline-block;
 	padding: 15px 40px;
 	margin-bottom: 0;
@@ -1989,7 +1989,7 @@ margin-bottom: 20px;
 .enigma_footer_widget_area p {
 	font-size: 13px;
 	line-height: 22px;
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .enigma_footer_widget_area h6 {
@@ -2017,7 +2017,7 @@ margin-bottom: 20px;
 }
 
 .enigma_footer_widget_title{
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	margin: 0px 0px 25px 0px;
 	line-height: 25px;
@@ -2030,7 +2030,7 @@ margin-bottom: 20px;
 
 
 .enigma_footer_widget_column address{
-	font-family: 'Advent Pro' !important;
+	font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 25px;
 }
@@ -2064,7 +2064,7 @@ margin-bottom: 20px;
 }
 .enigma_footer_widget_link a {
     display: block;
-    font-family: 'Advent Pro' !important;
+    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     line-height: 20px;
     margin: 0 0 10px;
@@ -2090,7 +2090,7 @@ margin-bottom: 20px;
     padding: 10px 0 0px;
 }
 .enigma_footer_area p {
-   font-family: 'Advent Pro' !important;
+   font-family: 'Montserrat', sans-serif;
 	line-height: 20px;
     font-size: 13px;
     bottom:0;
