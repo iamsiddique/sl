@@ -45,9 +45,12 @@ foreach($this->wpl_properties as $key=>$property)
 				<div class="wpl_prp_top_boxes front" style="height:250px;">
 					<?php wpl_activity::load_position('wpl_property_listing_image', array('wpl_properties'=>$this->wpl_properties)); ?>
 				</div>
-				<div class="wpl_prp_top_boxes back">
+				<!-- <div class="wpl_prp_top_boxes back">
 					<a itemprop="url" id="prp_link_id_<?php echo $property['data']['id']; ?>" href="<?php echo $property['property_link']; ?>" class="view_detail"><?php echo __('More Details', 'wpl'); ?></a>
-				</div>
+				</div> -->
+			</div>
+			<div class="price_box">
+				<span itemprop="price" content="<?php echo $property_price; ?>"><?php echo $property_price; ?></span>
 			</div>
 			<div class="wpl_prp_bot">
 				<?php
@@ -61,9 +64,7 @@ foreach($this->wpl_properties as $key=>$property)
 				<div class="wpl_prp_listing_icon_box"><?php echo $room . $bathroom . $parking . $pic_count . $build_up_area; ?></div>
 				<div class="wpl_prp_desc" itemprop="description"><?php echo substr($description, 0, $cut_position + 1); ?></div>
 			</div>
-			<div class="price_box">
-				<span itemprop="price" content="<?php echo $property_price; ?>"><?php echo $property_price; ?></span>
-			</div>
+			
 		</div>
 	</div>
     <?php

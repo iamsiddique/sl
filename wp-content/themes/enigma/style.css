@@ -229,7 +229,9 @@ line-height: 26px;
 .carousel{
 	margin-bottom:40px;
 }
-
+.carousel-inner{
+	height:420px;
+}
 .carousel-inner img{
 	width:100%;
 }

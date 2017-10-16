@@ -11,8 +11,8 @@ defined('_WPLEXEC') or die('Restricted access');
         <div class="row">
             <div class="col-md-12">
                 <div class="padding-custom" >
-                <?php echo '<span >' . $this->total_pages . ' '. __('Property Found', 'wpl') . '</span>'?>
-                <!-- BreadCrumb -->
+                <?php echo '<span >'  . ' '. __('Properties To', 'wpl') . '</span>'?>
+                <!-- BreadCrumb . $this->total_pages -->
                 <?php the_title();?></div>
                  <span class="wpl-sort-options-list"><?php echo $this->model->generate_sorts(array('type'=>1, 'kind'=>$this->kind)); ?></span>
     <span class="wpl-sort-options-selectbox"><?php echo $this->model->generate_sorts(array('type'=>0, 'kind'=>$this->kind)); ?></span>

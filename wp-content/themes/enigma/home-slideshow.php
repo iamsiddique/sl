@@ -38,7 +38,7 @@ $wl_theme_options['slider_image_speed'];
 			 </ul>
 			 <?php }
 			if($wl_theme_options['slide_btn_text_'.$i]!='') { ?>
-            <a class="enigma_blog_read_btn animated bounceInUp" href="<?php if($wl_theme_options['slide_btn_link_'.$i]!='') { echo esc_url($wl_theme_options['slide_btn_link_'.$i]); } ?>" role="button"><?php echo esc_attr($wl_theme_options['slide_btn_text_'.$i]); ?></a>
+           <!--  <a class="enigma_blog_read_btn animated bounceInUp" href="<?php if($wl_theme_options['slide_btn_link_'.$i]!='') { echo esc_url($wl_theme_options['slide_btn_link_'.$i]); } ?>" role="button"><?php echo esc_attr($wl_theme_options['slide_btn_text_'.$i]); ?></a> -->
 			<?php } ?>
             </div>
 			<?php } ?>

@@ -49,9 +49,11 @@
 						
 		</div> -->
 		<div class="hidesort">
+			<div class="container">
 <?php
 echo do_shortcode('[WPL kind="0" sf_unit_price="260" sf_select_sp_featured="1" limit="12" wplorderby="p.mls_id" wplorder="DESC" wplcolumns="3"]');
 ?>
+</div>
 </div>
 	</div>
 <!-- /portfolio section -->
