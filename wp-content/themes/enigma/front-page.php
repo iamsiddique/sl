@@ -1,6 +1,7 @@
 <?php get_header(); 
 $wl_theme_options = weblizar_get_options();
 $wl_theme_options['_frontpage'];
+$imageURL = get_option( 'siteurl' ) . "/wp-content/uploads/2017/04/man.png";
 if ($wl_theme_options['_frontpage']=="1" && is_front_page())
 {	get_template_part('home','slideshow'); 
 	
@@ -27,7 +28,7 @@ Whether you're buying or selling, are a landlord or a tenant, we will help you e
 <p class="welcome-test">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing </p>
 </div>
 <div class="col-lg-4">	
-<img src="http://localhost:9090/sl/wp-content/uploads/2017/04/man.png" class="img-responsive" alt="SkyLord Real  Estates">
+<img src="<?php echo $imageURL; ?>" class="img-responsive" alt="<?php echo $imageURL; ?>">
 </div>
 <div style="clear:both"></div>
 </div>
