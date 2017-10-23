@@ -1414,6 +1414,7 @@ class enigma_Font_Control extends WP_Customize_Control
    <select <?php $this->link(); ?> >
     <option  value="Abril Fatface"<?php if($this->value()== 'Abril Fatface') echo 'selected="selected"';?>><?php _e('Abril Fatface','enigma'); ?></option>
 	<option  value="Montserrat"<?php if($this->value()== 'Montserrat')  echo 'selected="selected"';?>><?php _e('Montserrat','enigma'); ?></option>
+	<option  value="'Montserrat', sans-serif"<?php if($this->value()== "Montserrat', sans-serif")  echo 'selected="selected"';?>><?php _e("'Montserrat', sans-serif",'enigma'); ?></option>
 	<option  value="Aldrich"<?php if($this->value()== 'Aldrich') echo 'selected="selected"';?>><?php _e('Aldrich','enigma'); ?></option>
 	<option  value="Alex Brush"<?php if($this->value()== 'Alex Brush') echo 'selected="selected"';?>><?php _e('Alex Brush','enigma'); ?></option>
 	<option  value="Allura"<?php if($this->value()== 'Allura') echo 'selected="selected"';?>><?php _e('Allura','enigma'); ?></option>
