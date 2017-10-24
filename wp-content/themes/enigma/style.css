@@ -280,11 +280,11 @@ line-height: 26px;
 
 .carousel-list li {
 	color: #fff;
-	font-size: 17px;
+	font-size: 14px;
 	margin-bottom: 10px;
 	overflow: hidden;
 	font-weight: 600;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif !important;
 	padding:10px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -1253,8 +1253,8 @@ margin-bottom:20px;
 	
 }
 .enigma_blog_post_content p {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
+	font-family: 'Montserrat', sans-serif !important;
+	font-size: 14px;
 	line-height: 27px;
 	margin: 0 0 20px;
 }
@@ -2003,7 +2003,7 @@ margin-bottom: 20px;
 
 
 .enigma_footer_widget_area{
-	background: #34495e;
+	background: #cecece;
 }
 
 .enigma-footer-separator{
@@ -2509,4 +2509,17 @@ padding-top: 20px;
     width: 100% !important;
     height: 65% !important;
 }
+}
+.bgcolor{
+	padding: 50px 50px 150px 50px;
+    /* background: #ffffffb3; */
+    color: #eaeaea;
+    text-align: center;
+    margin: 20px 0;
+}
+.font-color-fff {
+	color: #eaeaea !important;
+}
+.hr-color{
+	border-top: 1px solid #ffce75 !important;
 }
