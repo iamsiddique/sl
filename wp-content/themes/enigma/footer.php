@@ -60,6 +60,9 @@
 <?php if($wl_theme_options['custom_css']) ?>
 <style type="text/css">
 <?php { echo esc_attr($wl_theme_options['custom_css']); } ?>
+.carousel-text h1{
+	font-family:'Montserrat', sans-serif !important;
+}
 </style>
 <?php get_template_part('google', 'font'); ?>
 <?php wp_footer(); ?>
