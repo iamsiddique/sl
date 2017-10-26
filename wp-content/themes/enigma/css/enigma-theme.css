@@ -16,7 +16,7 @@ a:hover, a:focus{
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-	color: #666;
+	color: #252627;
 	text-shadow: 0 0 1px rgba(0,0,0,0.01);
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
@@ -54,8 +54,9 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 0px;
 	/* -webkit-box-shadow: 2px 2px 0 rgba(201, 201, 201, 1);
 	-moz-box-shadow: 2px 2px 0 rgba(201, 201, 201, 1);
-	box-shadow: 2px 2px 0 rgba(201, 201, 201, 1); */
-	color:#31A3DD;
+	box-shadow: 2px 2px 0 rgba(201, 201, 201, 1); 
+	color:#31A3DD;*/
+	border-bottom: 1px solid #24beff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: normal;
 	font-size:15px;
@@ -70,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 	/* -webkit-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
 	-moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
 	box-shadow: 3px 3px 0 rgba(201, 201, 201, 1); */
-	color:#31A3DD;
+	color:#24beff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: normal;
 	font-size:15px;

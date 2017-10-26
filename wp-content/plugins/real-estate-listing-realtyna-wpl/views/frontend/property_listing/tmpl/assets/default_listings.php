@@ -43,7 +43,8 @@ foreach($this->wpl_properties as $key=>$property)
 		<div class="wpl_prp_cont wpl_prp_cont_old <?php echo ((isset($this->property_css_class) and in_array($this->property_css_class, array('row_box', 'grid_box'))) ? $this->property_css_class : ''); ?>" id="wpl_prp_cont<?php echo $property['data']['id']; ?>" itemscope itemtype="https://schema.org/TradeAction">
 			<div class="wpl_prp_top">
 				<div class="wpl_prp_top_boxes front" style="height:250px;">
-					<?php wpl_activity::load_position('wpl_property_listing_image', array('wpl_properties'=>$this->wpl_properties)); ?>
+					<a itemprop="url" id="prp_link_id_<?php echo $property['data']['id']; ?>" href="<?php echo $property['property_link']; ?>" class="view_detail">
+					<?php wpl_activity::load_position('wpl_property_listing_image', array('wpl_properties'=>$this->wpl_properties)); ?></a>
 				</div>
 				<!-- <div class="wpl_prp_top_boxes back">
 					<a itemprop="url" id="prp_link_id_<?php echo $property['data']['id']; ?>" href="<?php echo $property['property_link']; ?>" class="view_detail"><?php echo __('More Details', 'wpl'); ?></a>
